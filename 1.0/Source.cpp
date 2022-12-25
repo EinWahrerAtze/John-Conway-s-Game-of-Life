@@ -15,7 +15,6 @@ int check_input()
 
 	while (!(std::cin >> temp) || (temp < 0))
 	{
-
 		std::cin.clear();
 		while (std::cin.get() != '\n')
 			continue;
@@ -47,7 +46,6 @@ int** manual_input(int& rows, int& columns)
 
 	while (rows - 2 < 2 || columns - 2 < 2)
 	{
-
 		std::cout << "Game field must contain more that one row and column, please repeat input.\n";
 		std::cout << "Enter amount of rows: ";
 		rows = check_input() + 2;
@@ -287,7 +285,6 @@ bool check_if_dead(int** first_world, int& alive_cells, const int rows, const in
 	{
 		for (int j = 1; j < columns - 1; ++j)
 		{
-
 			if (first_world[i][j] == 1)
 			{
 				++alive_cells;
@@ -303,7 +300,6 @@ bool check_if_stagnated(int** first_world, int** second_world, const int rows, c
 	{
 		for (int j = 1; j < columns - 1; ++j)
 		{
-
 			if (first_world[i][j] != second_world[i][j])
 			{
 				return false;
