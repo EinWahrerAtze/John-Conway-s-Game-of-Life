@@ -1,5 +1,4 @@
 ﻿cmake_minimum_required (VERSION 3.8)
 set (CMAKE_CXX_STANDARD 20)
 project ("John Conway's Game of Life")
-add_compile_options("$<$<CXX_COMPILER_ID:MSVC>:/utf-8>")
-add_executable (CMakeTarget main.cpp game.h game.cpp)
+add_executable (CMakeTarget main.cpp life.h life.cpp)

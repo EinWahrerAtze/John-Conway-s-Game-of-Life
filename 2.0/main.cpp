@@ -2,27 +2,27 @@
 //  main.cpp
 //  John Conway's Game of Life
 //
-//  Created by Denis Fedorov on 17.12.2022.
+//  Created by Denis Fedorov on 14.01.2023.
 //
 
-#if defined(_WIN32)
+#include "life.h"
+#ifdef _WIN32
 #include <Windows.h>
 #endif
-#include "game.h"
 
 int main(int argc, const char * argv[])
 {
-#if defined(_WIN32)
+#ifdef _WIN32
 	SetConsoleOutputCP(CP_UTF8);
 #endif
-	Game game;
+	game::life life;
 	if (argc == 2)
 	{
-		game.run(argv[1]);
+		life.begin(argv[1]);
 	}
 	else
 	{
-		game.run();
+		life.begin();
 	}
 	return 0;
 }
