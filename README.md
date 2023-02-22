@@ -1,6 +1,6 @@
-# John-Conway-s-Game-of-Life
+## John-Conway-s-Game-of-Life
 
-## Version 2.0 description:
+### Version 2.0 description:
 
 Simple implementation of multithreaded programm. Main thread calls another which deals with game logic and output then waits for users input.
 Controls available during the game:
