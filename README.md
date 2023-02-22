@@ -2,9 +2,7 @@
 
 ### Version 2.0 description:
 
-#### The edges of the universe wrap around, so the top is connected to the bottom, and the right is connected to the left.
-
-Simple implementation of multithreaded programm. Main thread calls another thread which deals with game logic and then waits for users input.
+Infinite grid - the edges of the universe wrap around, the top is connected to the bottom, the right is connected to the left.
 Controls available during the game:
 
 * C - change colour of alive cells;
@@ -13,4 +11,4 @@ Controls available during the game:
 * R - restart current game or choose another pattern;
 * X - quit the game.
 
-To set game speed just type desired value in milliseconds during execution.
+To set game speed just type desired value in milliseconds.
